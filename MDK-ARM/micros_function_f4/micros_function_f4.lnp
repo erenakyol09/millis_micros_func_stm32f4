@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"micros_function_f4\startup_stm32f407xx.o"
+"micros_function_f4\main.o"
+"micros_function_f4\stm32f4xx_it.o"
+"micros_function_f4\stm32f4xx_hal_msp.o"
+"micros_function_f4\stm32f4xx_hal_tim.o"
+"micros_function_f4\stm32f4xx_hal_tim_ex.o"
+"micros_function_f4\stm32f4xx_hal_rcc.o"
+"micros_function_f4\stm32f4xx_hal_rcc_ex.o"
+"micros_function_f4\stm32f4xx_hal_flash.o"
+"micros_function_f4\stm32f4xx_hal_flash_ex.o"
+"micros_function_f4\stm32f4xx_hal_flash_ramfunc.o"
+"micros_function_f4\stm32f4xx_hal_gpio.o"
+"micros_function_f4\stm32f4xx_hal_dma_ex.o"
+"micros_function_f4\stm32f4xx_hal_dma.o"
+"micros_function_f4\stm32f4xx_hal_pwr.o"
+"micros_function_f4\stm32f4xx_hal_pwr_ex.o"
+"micros_function_f4\stm32f4xx_hal_cortex.o"
+"micros_function_f4\stm32f4xx_hal.o"
+"micros_function_f4\stm32f4xx_hal_exti.o"
+"micros_function_f4\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "micros_function_f4\micros_function_f4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "micros_function_f4.map" -o micros_function_f4\micros_function_f4.axf
